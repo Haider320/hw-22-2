@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+
+a{
+text-decoration: none;
+}
+ul{
+list-style-type: none;
+}
+p{
+font-family: "open sans", sans-sarif;
+}
+body{
+
+font-family: "ubuntu", sans-serif;
+}
+h1,h2{
+font-family: "Abril Fatface", cursive;
+}
+.container{
+width: 1170px;
+margin:auto ;
+}
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+.w-100{
+width: 100%;
+}
+.w-50{
+width: 50%;
+}
+
+.w-33{
+width: calc(100% / 3);
+}
+.w-25{
+width: 25%;
+}
+
+nav{
+    background-color: rgb(255, 0, 255);
+}
+nav .row{
+    justify-content: space-between;
+}
+
+
+nav .row ul li a{
+    padding: 15px 15px;
+    display:inline-block;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+#banner .container,
+#banner .container .row{
+    height: 100%;
+}
+
+.banner_slider_item{
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover  !important;
+    border: 2px solid blackwe;
+}
+
+
+.banner_slider_arrow{
+    color: red;
+    padding: 20px 20px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid orange;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50%;
+    transition: .5s;
+    position: absolute;
+    z-index: 999999999;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner_slider_arrow:hover{
+    background-color: rgb(0, 255, 21);
+    border: 2px dotted rgb(251, 255, 0);
+    color: black;
+}
+#banner .banner_slider .dots_slide{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+
+#banner .banner_slider .dots_slide li{
+    display: inline-block;
+    
+    
+}
+#banner .banner_slider .dots_slide li.slick-active button{
+    background-color: rgb(148, 255, 127);
+
+}
+
+#banner .banner_slider .dots_slide li button{
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.089);
+    background-color: blue;
+    margin-right: 10px;
+    transition: .5s;
+
+
+}
+
+
+
+.banner_slider_arrow.fa-arrow-right{
+    
+    right: 0;
+}
+
+.banner_slider_arrow.fa-arrow-left{
+    left: 0;
+}
+#banner .banner_slider .container .row{
+    align-items: center;
+    justify-content: center;
+    
+}
+.banner_slider_item{
+    text-align: center;
+}
+
+
+#liton .container .row{
+    margin-top: 60px;
+    align-items: center;
+    text-align: center;
+}
+.container h3{
+    margin-top: 45px;
+    text-transform: uppercase;
+    color:yellowgreen;
+}
+
+.container .counter_slide{
+    margin-top: 40px;
+    color: red;
+}
+
+
+
